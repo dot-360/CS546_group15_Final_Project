@@ -1,0 +1,38 @@
+<h1 class="mai">This is a signup page</h1>
+<form action="/users/signup" id="signup-form" method="post">
+    <label for="email"><b>email</b></label>
+    <input type="email" placeholder="Enter Email" name="email" id="useremail" value="{{user.email}}" >
+    <br>
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" id="password" value="{{user.password}}"  required>
+    <br>
+    <label for="firstname"><b>firstname</b></label>
+    <input type="text" placeholder="Enter firstname" name="firstname" id="userfirstname" value="{{user.firstname}}" required>
+    <br>
+    <label for="lastname"><b>lastname</b></label>
+    <input type="text" placeholder="Enter lastname" name="lastname" id="userlastname" value="{{user.lastname}}"  required>
+    <br>
+    <label for="address"><b>address</b></label>
+    <input type="text" placeholder="Enter address" name="address" id="useraddress" value="{{user.address}}" required>
+    <br>
+    <label for="city"><b>city</b></label>
+    <input type="text" placeholder="Enter city" name="city" id="usercity" value="{{user.city}}" required>
+    <br>
+    <label for="zipcode"><b>zipcode</b></label>
+    <input type="text" placeholder="Enter zipcode" name="zipcode" id="userzipcode" pattern="[0-9]{5}" value="{{user.zipcode}}"required>
+
+    
+
+    <button type="submit">Signup</button>
+
+<br>
+<br>
+<section>
+    
+    <p class = "error"> {{ message }} </p>
+    
+    
+</section>
+
+<a href="/login">Already have an account? Click here to log-in</a>
+</form>

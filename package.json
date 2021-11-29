@@ -1,0 +1,21 @@
+{
+  "name": "finalproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "kaushal solanki",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "email-validator": "^2.0.4",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.1",
+    "express-session": "^1.17.2",
+    "mongodb": "^4.1.4",
+    "node-simple-validator": "^2.0.0",
+    "xss": "^1.0.10"
+  }
+}

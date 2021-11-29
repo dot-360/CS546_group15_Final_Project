@@ -1,0 +1,21 @@
+<section>
+<form action="/users/profile" id="signup-form" method="post">
+
+<label for="firstname"><b>firstname</b></label>
+    <input type="text" placeholder="Enter firstname" name="firstname" id="userfirstname"  value="{{firstName}}"  readonly>
+    <br>
+    <label for="lastname"><b>lastname</b></label>
+    <input type="text" placeholder="Enter lastname" name="lastname" id="userlastname" value="{{lastname}}"  readonly>
+    <br>
+    <label for="address"><b>address</b></label>
+    <input type="text" placeholder="Enter address" name="address" id="useraddress" value="{{address}}"  readonly>
+    <br>
+    <label for="city"><b>city</b></label>
+    <input type="text" placeholder="Enter city" name="city" id="usercity" value="{{address}}" readonly>
+    <br>
+    <label for="zipcode"><b>zipcode</b></label>
+    <input type="text" placeholder="Enter zipcode" name="zipcode" id="userzipcode" pattern="[0-9]{5}" value="{{zipcode}}" readonly>
+
+    <button type="submit" name="editbtn" id="editbtn">update</button>
+</form>
+</section>
